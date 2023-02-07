@@ -11,5 +11,4 @@ function mindGame(number){
 }
 
 
-const l = mindGame(5);
-console.log(l);
+

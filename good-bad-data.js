@@ -2,16 +2,20 @@
 
 function findingBadData(arr){
     if ( Array.isArray(arr)){
-        for(i = 0; i < arr.length; i++){
-            const n = arr.indexOf[i]
-            console.log(n)
+        count = 0;
+        for(let i = 0; i < arr.length; i++){
+            const n = arr[i];
+            if (n < 0){
+                count += 1;
+            }
+            else{
+                continue
+            }
         }
+        return count;
     }
     else{
-        return false
+       console.log('enter an array.')
     }
 }
 
-// const a =  [ -4, -9, -5, -33, -55 ];
-const n = findingBadData('jg');
-// console.log(n)
